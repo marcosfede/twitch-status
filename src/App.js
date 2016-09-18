@@ -4,6 +4,9 @@ import Topbar from './components/Topbar'
 import Streamcard from './components/Streamcard'
 import $ from 'jquery'
 import { Tabs, Tab } from 'material-ui/Tabs'
+import icon404 from './icons/404.png'
+import twitchIcon from './icons/twitch.png'
+
 
 const styles = {
 }
@@ -99,8 +102,8 @@ class App extends Component {
             key={stream}
             status='Not Found'
             channel={stream}
-            thumbnail='./icons/404.png'
-            img='./icons/404.png' />))
+            thumbnail={icon404}
+            img={icon404} />))
     }
 
     return (
@@ -108,7 +111,7 @@ class App extends Component {
         <Topbar/>
         <div id='content'>
           <div id='title'>
-            <img role='presentation' src='../icons/twitch.png'></img>
+            <img role='presentation' src={twitchIcon}></img>
             <h1>Twitch Status</h1>
           </div>
           <Tabs>
