@@ -99,8 +99,8 @@ class App extends Component {
             key={stream}
             status='Not Found'
             channel={stream}
-            thumbnail='../icons/404.png'
-            img='../icons/404.png' />))
+            thumbnail='./icons/404.png'
+            img='./icons/404.png' />))
     }
 
     return (
