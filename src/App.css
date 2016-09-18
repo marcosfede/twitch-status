@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Mono';
+
+#App {
+    height: 100%;
+
+}
+#content {
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: -30px;
+}
+#title>img {
+  width: 45px;
+  height: 45px;
+}
+
+@media (max-width: 600px) {
+   #content {
+       width: 90%;
+   }
+}
